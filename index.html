@@ -3,245 +3,258 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeatMe | Compite contigo mismo</title>
+    <title>BeatMe | Somos una plataforma para construir constancia</title>
     <meta
       name="description"
-      content="BeatMe es una app de fitness y nutrición para entrenar mejor, comer mejor y seguir tu progreso con claridad."
+      content="Conoce BeatMe: quiénes somos, por qué existimos, cuál es nuestro objetivo y cómo ayudamos a las personas a construir hábitos de entrenamiento y nutrición."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-glow glow-1" aria-hidden="true"></div>
-    <div class="bg-glow glow-2" aria-hidden="true"></div>
+    <div class="bg-shape shape-a" aria-hidden="true"></div>
+    <div class="bg-shape shape-b" aria-hidden="true"></div>
+    <div class="bg-shape shape-c" aria-hidden="true"></div>
 
     <header class="site-header">
       <div class="container nav">
-        <a href="#top" class="brand">
-          <img src="logo.png" alt="BeatMe" class="brand-logo" />
+        <a href="#inicio" class="brand" aria-label="Ir al inicio">
+          <img src="../assets/images/logo.png" alt="BeatMe" class="brand-logo" />
         </a>
 
-        <nav class="nav-links">
-          <a href="#beneficios">Beneficios</a>
-          <a href="#funciones">Funciones</a>
-          <a href="#cta">Descargar</a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#objetivo">Objetivo</a>
+          <a href="#producto">Producto</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#contacto">Contacto</a>
         </nav>
 
-        <a href="#cta" class="btn btn-primary btn-sm">Descargar</a>
+        <a href="https://drive.google.com/drive/folders/1-KCzmcYZMnvmwkL-e8w81SogEE97OgYb?hl=es" target="_blank" class="btn btn-primary btn-sm nav-cta">Descargar
+        </a>
       </div>
     </header>
 
-    <main id="top">
+    <main id="inicio">
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow">COMPITE CONTIGO MISMO</span>
-
-            <h1>
-              Haz visible
-              <span>tu progreso.</span>
-            </h1>
-
+            <p class="eyebrow">SOBRE BEATME</p>
+            <h1>No somos una app más. Somos un sistema para sostener hábitos.</h1>
             <p class="hero-text">
-              BeatMe reúne entrenamiento, nutrición y seguimiento en una sola app
-              para ayudarte a avanzar con más claridad y más constancia.
+              BeatMe nace para resolver un problema real: mucha gente sabe que debe
+              hacer, pero no logra mantenerlo. Diseñamos una experiencia que une
+              entrenamiento, nutrición y seguimiento para convertir intenciones en
+              consistencia.
             </p>
-
             <div class="hero-actions">
-              <a href="#cta" class="btn btn-primary">Quiero probar BeatMe</a>
-              <a href="#funciones" class="btn btn-secondary">Ver funciones</a>
-            </div>
-
-            <div class="hero-list">
-              <p>Rutinas, comidas y progreso en un solo lugar</p>
-              <p>IA en español para ayudarte a decidir mejor</p>
-              <p>Diseñada para crear constancia</p>
+              <a href="#nosotros" class="btn btn-primary">Conócenos</a>
+              <a href="#producto" class="btn btn-secondary">Ver cómo funciona</a>
             </div>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="phone">
-              <div class="phone-top"></div>
-
-              <div class="phone-screen">
-                <div class="app-top">
-                  <div>
-                    <p class="screen-label">Hoy</p>
-                    <h3>Tu avance</h3>
-                  </div>
-                  <span class="status-pill">On track</span>
-                </div>
-
-                <div class="progress-card">
-                  <p class="card-kicker">Progreso diario</p>
-                  <div class="progress-line">
-                    <span style="width: 78%"></span>
-                  </div>
-                  <div class="progress-meta">
-                    <span>Entrenamiento</span>
-                    <strong>78%</strong>
-                  </div>
-                </div>
-
-                <div class="macro-row">
-                  <div>
-                    <span>Calorías</span>
-                    <strong>1,920</strong>
-                    <small>de 2,200</small>
-                  </div>
-                  <div>
-                    <span>Proteína</span>
-                    <strong>142g</strong>
-                    <small>objetivo 160g</small>
-                  </div>
-                </div>
-
-                <div class="session-card">
-                  <div class="session-head">
-                    <p class="card-kicker">Entrenamiento</p>
-                    <span class="session-badge">Pierna</span>
-                  </div>
-
-                  <ul class="session-list">
-                    <li>
-                      <span>Sentadilla</span>
-                      <strong>4 x 8</strong>
-                    </li>
-                    <li>
-                      <span>Prensa</span>
-                      <strong>3 x 12</strong>
-                    </li>
-                    <li>
-                      <span>Peso muerto rumano</span>
-                      <strong>4 x 10</strong>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="coach-card">
-                  <p class="card-kicker">Asistente IA</p>
-                  <p>Te faltan 18g de proteína para cerrar tu meta de hoy.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="stats reveal">
-        <div class="container stats-grid">
-          <article class="stat-item">
-            <p class="stat-number" data-counter="3">0</p>
-            <p class="stat-label">Áreas clave</p>
-          </article>
-
-          <article class="stat-item">
-            <p class="stat-number" data-counter="1">0</p>
-            <p class="stat-label">Sistema simple</p>
-          </article>
-
-          <article class="stat-item">
-            <p class="stat-number" data-counter="100">0</p>
-            <p class="stat-label">Más enfoque</p>
+          <article class="hero-image-card reveal" aria-label="Imagen destacada">
+            <img
+              src="./1.png"
+              alt="Comida saludable representando el enfoque de BeatMe"
+              class="hero-image"
+            />
           </article>
         </div>
       </section>
 
-      <section id="beneficios" class="section">
+      <section id="nosotros" class="section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="section-tag">BENEFICIOS</span>
-            <h2>Menos fricción. Más avance.</h2>
+          <div class="section-head reveal">
+            <p class="section-tag">QUIÉNES SOMOS</p>
+            <h2>Un equipo enfocado en comportamiento, salud y producto digital.</h2>
             <p>
-              Todo lo importante en una sola experiencia para que no pierdas ritmo.
+              Somos estudiantes y creadores construyendo una plataforma que ayude
+              a las personas a mejorar su salud sin depender de motivación
+              momentánea.
             </p>
           </div>
 
-          <div class="benefits-grid">
-            <article class="benefit-card reveal">
-              <h3>Entrena con estructura</h3>
-              <p>Guarda rutinas y registra cada sesión con claridad.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Come con más control</h3>
-              <p>Registra alimentos y entiende mejor tus macros.</p>
-            </article>
-
-            <article class="benefit-card reveal">
-              <h3>Mide tu progreso</h3>
-              <p>Ve qué hiciste, qué falta y cómo vas avanzando.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="funciones" class="section section-alt">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="section-tag">FUNCIONES</span>
-            <h2>Lo esencial, bien hecho.</h2>
-            <p>
-              BeatMe se enfoca en lo que más importa para que sí la quieras usar.
-            </p>
-          </div>
-
-          <div class="feature-highlight reveal">
-            <div class="feature-copy">
-              <span class="feature-mini-tag">Nutrición + Entrenamiento + IA</span>
-              <h3>Una app pensada para crear constancia real.</h3>
+          <div class="who-grid">
+            <article class="panel reveal">
+              <h3>Qué hacemos</h3>
               <p>
-                Registra tus comidas, guarda tus rutinas, sigue tu avance y recibe
-                ayuda rápida sin salir de tu propio sistema.
+                Traducimos principios de entrenamiento y nutrición en una
+                experiencia simple: planear, registrar, revisar y ajustar.
               </p>
-            </div>
-
-            <div class="feature-points">
-              <p>Control de comidas y macros</p>
-              <p>Rutinas y sesiones completas</p>
-              <p>Asistente en español</p>
-              <p>Seguimiento visual del progreso</p>
-            </div>
+            </article>
+            <article class="panel reveal">
+              <h3>Para quién</h3>
+              <p>
+                Para personas que quieren entrenar y comer mejor, pero necesitan
+                estructura, seguimiento y decisiones más claras.
+              </p>
+            </article>
+            <article class="panel reveal">
+              <h3>Cómo pensamos</h3>
+              <p>
+                Menos ruido, más acción. Menos promesas vacías, más progreso medible
+                en el día a día.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container quote-card">
-          <span class="section-tag">EN UNA FRASE</span>
-          <h2>BeatMe no solo te acompaña: te mantiene en movimiento.</h2>
-          <p>
-            Es tu espacio personal para entrenar mejor, comer mejor y competir
-            contigo mismo con enfoque y constancia.
-          </p>
+      <section id="objetivo" class="section section-accent">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-tag">MISIÓN, VISIÓN Y OBJETIVO</p>
+            <h2>Queremos que cuidar tu salud sea sostenible, no temporal.</h2>
+          </div>
+
+          <div class="mvo-grid">
+            <article class="mvo-card reveal">
+              <h3>Misión</h3>
+              <p>
+                Ayudar a cada usuario a construir hábitos de entrenamiento y
+                nutrición con herramientas simples, útiles y accionables.
+              </p>
+            </article>
+            <article class="mvo-card reveal">
+              <h3>Visión</h3>
+              <p>
+                Ser la plataforma de referencia para personas que quieren progreso
+                real, medible y sostenido en su bienestar integral.
+              </p>
+            </article>
+            <article class="mvo-card reveal">
+              <h3>Objetivo principal</h3>
+              <p>
+                Reducir abandono de rutinas y planes alimenticios mediante
+                estructura diaria, acompañamiento inteligente y seguimiento visual.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="cta" class="section reveal">
+      <section id="producto" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-tag">QUÉ OFRECE BEATME</p>
+            <h2>Una sola plataforma para entrenar, comer y evaluar tu avance.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <h3>Entrenamiento estructurado</h3>
+              <p>Rutinas, sesiones, series y progreso por ejercicio en contexto real.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Nutrición útil</h3>
+              <p>Registro simple de comidas, macros y metas con enfoque práctico.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Asistente IA</h3>
+              <p>
+                Soporte en español para dudas sobre alimentación, técnica y
+                estrategia.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Progreso completo</h3>
+              <p>Visualizaciones diarias y semanales para decidir mejor que ajustar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-tag">NUESTRA RUTA</p>
+            <h2>Cómo estamos construyendo BeatMe</h2>
+          </div>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <span>01</span>
+              <p>Detectamos el problema de abandono en planes de salud personales.</p>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <p>Diseñamos una experiencia centrada en constancia y simplicidad.</p>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <p>Integramos entrenamiento, nutrición, progreso e IA en un flujo único.</p>
+            </li>
+            <li class="reveal">
+              <span>04</span>
+              <p>Iteramos con feedback real para mejorar claridad, usabilidad y valor.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="equipo" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-tag">EQUIPO</p>
+            <h2>Personas construyendo herramientas para personas.</h2>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card reveal">
+              <p class="role">Producto</p>
+              <h3>Estrategia y experiencia</h3>
+              <p>
+                Definimos que construir primero para resolver necesidades reales del
+                usuario.
+              </p>
+            </article>
+            <article class="team-card reveal">
+              <p class="role">Desarrollo</p>
+              <h3>App y plataforma</h3>
+              <p>
+                Convertimos ideas en funcionalidades robustas, escalables y fáciles
+                de usar.
+              </p>
+            </article>
+            <article class="team-card reveal">
+              <p class="role">Salud y contenido</p>
+              <h3>Entrenamiento y nutrición</h3>
+              <p>
+                Aterrizamos recomendaciones prácticas para que la app sea útil en la
+                vida diaria.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section cta-section reveal">
         <div class="container cta-box">
-          <div class="cta-copy">
-            <span class="section-tag">EMPIEZA HOY</span>
-            <h2>Haz que tu progreso se vea y se sostenga.</h2>
-            <p>Convierte tus decisiones diarias en resultados con BeatMe.</p>
+          <div>
+            <p class="section-tag">TRABAJEMOS JUNTOS</p>
+            <h2>Queremos llevar BeatMe al siguiente nivel con feedback real.</h2>
+            <p>
+              Si quieres colaborar, probar nuevas funciones o sumar ideas, estamos
+              listos para escucharte.
+            </p>
           </div>
 
           <div class="cta-actions">
-            <a href="#" class="btn btn-primary">Descargar app</a>
-            <a href="#" class="btn btn-secondary">Solicitar demo</a>
+            <a href="https://drive.google.com/drive/folders/1-KCzmcYZMnvmwkL-e8w81SogEE97OgYb?hl=es" target="_blank" class="btn btn-secondary">Descargar</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>BeatMe Web Preview</p>
+      <div class="container footer-row">
+        <p>BeatMe - Plataforma de entrenamiento y nutrición</p>
         <p id="year"></p>
       </div>
     </footer>
